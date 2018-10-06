@@ -3,7 +3,7 @@ module Diffbot
 
     # Diffbot Product API class
     class Product < GenericAPI
-      ALLOWED_PARAMS = [:fields, :timeout, :callback]
+      ALLOWED_PARAMS = [:url, :fields, :timeout, :callback] # Fixing batch url parameter
       DEFAULT_VERSION = 2
 
       # Initializes a new Product API object
